@@ -1,17 +1,17 @@
 import React from "react";
-import css from './Profile.module.css';
+import style from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
 	return (
-		<div className={css.content}>
+		<div className={style.content}>
 			<div>
 				<img src="https://t3.ftcdn.net/jpg/03/57/96/98/360_F_357969833_OJe2ircqLJDBsBfE6rva63hpIBzK2vRG.jpg"/>
 			</div>
 			<div>
 				ava + description
 			</div>
-			<MyPosts/>
+			<MyPosts />
 		</div>
 	)
 }

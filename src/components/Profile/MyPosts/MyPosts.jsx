@@ -1,5 +1,5 @@
 import React from "react";
-import css from './MyPosts.module.css';
+import style from './MyPosts.module.css';
 import Post from "./Post/Post";
 
 const MyPosts = () => {
@@ -9,13 +9,10 @@ const MyPosts = () => {
 		<div>
 			<textarea></textarea>
 			<button>add post</button>
-			<button>remove</button>
 		</div>
-			<div className={css.posts}>
-				<Post/>
-				<Post/>
-				<Post/>
-				<Post/>
+			<div className={style.posts}>
+				<Post message="Hi, how are you?"/>
+				<Post message="It's my first post"/>
 			</div>
 		</div>
 	)
