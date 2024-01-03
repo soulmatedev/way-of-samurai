@@ -1,4 +1,24 @@
-.content {
-    grid-area: c;
-    background-color: #a5d9fa;
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+    .items {
+        padding: 10px;
+
+        .dialog {
+
+        }
+
+        .active {
+            color: darkblue;
+        }
+    }
+
+    .messages {
+        padding: 10px;
+
+        .message {
+
+        }
+    }
 }
