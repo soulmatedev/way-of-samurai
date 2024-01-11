@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
 import App from "./App";
-import {addPost, updateNewPostText} from "./redux/state";
+import {addMessage, addPost, updateNewMessageText, updateNewPostText} from "./redux/state";
 
 let root;
 
@@ -12,7 +12,13 @@ function createRoot() {
 export function rerenderEntireTree(state) {
 	root.render(
 		<React.StrictMode>
-			<App state={state} addPost={addPost} updateNewPostText={updateNewPostText}/>
+			<App
+				state={state}
+				addPost={addPost}
+				addMessage={addMessage}
+				updateNewPostText={updateNewPostText}
+				updateNewMessageText={updateNewMessageText}
+			/>
 		</React.StrictMode>
 	);
 }
