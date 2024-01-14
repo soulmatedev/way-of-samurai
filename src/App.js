@@ -21,8 +21,7 @@ function App(props) {
 							element={
 								<Dialogs
 									state={props.state.dialogsPage}
-									addMessage={props.addMessage}
-									updateNewMessageText={props.updateNewMessageText}
+									dispatch={props.dispatch}
 								/>}
 						/>
 						<Route
