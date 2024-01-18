@@ -30,7 +30,8 @@ let store = {
 				{id: 5, name: 'Viktor'},
 				{id: 6, name: 'Valera'},
 			],
-		}
+		},
+		sidebar: {}
 	},
 	_callSubscriber() {
 		console.log('state changed')

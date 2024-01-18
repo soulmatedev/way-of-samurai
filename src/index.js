@@ -1,7 +1,7 @@
 import './index.css';
 import ReactDOM from "react-dom/client";
 import React from "react";
-import store from "./redux/state";
+import store from "./redux/redux-store";
 import App from "./App";
 
 let root;
@@ -26,4 +26,7 @@ createRoot();
 
 rerenderEntireTree(store.getState());
 
-store.subscribe(rerenderEntireTree);
+store.subscribe(() => {
+	let state = store.getState();
+	rerenderEntireTree(state);
+});
