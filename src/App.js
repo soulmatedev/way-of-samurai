@@ -28,7 +28,7 @@ function App(props) {
 							path="/profile"
 							element={
 								<Profile
-									profilePage={props.state.profilePage}
+									store={props.store}
 									dispatch={props.dispatch}
 								/>}
 						/>
