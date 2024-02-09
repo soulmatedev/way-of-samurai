@@ -1,7 +1,6 @@
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import Profile from "./components/Profile/Profile";
 import {Route, Routes} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
@@ -23,12 +22,9 @@ function App(props) {
 							/>}
 					/>
 					<Route
-						path="/profile"
+						path="/profile/:userId?"
 						element={
-							<ProfileContainer
-								store={props.store}
-								dispatch={props.dispatch}
-							/>}
+							<ProfileContainer store={props.store} dispatch={props.dispatch} />}
 					/>
 					<Route
 						path="/users"
