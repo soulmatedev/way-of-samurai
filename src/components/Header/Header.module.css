@@ -7,3 +7,12 @@
         height: 20px;
     }
 }
+
+.login_block {
+    float: right;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
