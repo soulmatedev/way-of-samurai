@@ -7,8 +7,8 @@ const Header = (props) => (
             src='https://png.pngtree.com/png-clipart/20230207/original/pngtree-beauty-logo-design-png-image_8947095.png'
             alt=''/>
       <div className={styles.login_block}>
-        { props.isAuth ? props.login
-        : <NavLink to={'/login'}>Login</NavLink>}
+        <p>{ props.isAuth ? props.login
+          : <NavLink to={'/login'}>Login</NavLink>}</p>
       </div>
     </header>
 )

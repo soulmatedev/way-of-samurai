@@ -1,18 +1,32 @@
 .header {
+    display: grid;
+    grid-template-columns: 1fr 0.05fr;
+    align-items: center;
+    justify-content: center;
     grid-area: h;
-    background-color: #1E90FF;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
 
     img {
+        cursor: pointer;
+        padding-left: 30px;
         width: 20px;
         height: 20px;
     }
+
 }
 
 .login_block {
-    float: right;
+    padding-right: 30px;
+    font-size: 14px;
+
+    p {
+        cursor: pointer;
+        color: #282828;
+    }
 
     a {
         color: white;
-        text-decoration: none;
     }
 }
