@@ -2,9 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {getUserProfile} from "../../redux/profileReducer";
-import {redirect, useParams} from "react-router";
-import {withAuthRedirect} from "../../hoc/withAuthRedirect";
-import Dialogs from "../Dialogs/Dialogs";
+import {useParams} from "react-router";
 import {compose} from "redux";
 
 const withRouter = WrappedComponent => props => {
@@ -42,6 +40,5 @@ let mapStateToProps = (state) => ({
 export default compose(
 	connect(mapStateToProps, {getUserProfile}),
 	withRouter,
-	withAuthRedirect,
 )(ProfileContainer)
 
